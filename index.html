@@ -59,19 +59,27 @@
 
 
 	<style>
-  	/* Tutte le scritte di default verde bosco */
-  	body, p, h1, h2, h3, h4, h5, h6, span, a {
-    	color: #228B22; /* verde bosco */
-  	}
+/* Tutte le scritte verde bosco, mirate solo al body con classe */
+body.custom-colors h1,
+body.custom-colors h2,
+body.custom-colors h3,
+body.custom-colors h4,
+body.custom-colors h5,
+body.custom-colors h6,
+body.custom-colors p,
+body.custom-colors span,
+body.custom-colors a {
+    color: #228B22 !important; /* verde bosco */
+}
 
-  	/* Solo Francesco & Alessia in burgundy */
-  	.names-special {
-    	color: #800020; /* burgundy */
-  	}
-	</style>
+/* Solo Francesco & Alessia in burgundy */
+.names-special {
+    color: #800020 !important; /* burgundy */
+}
+</style>
 
 	</head>
-	<body>
+	<body class="custom-colors">
 		
 	<div class="fh5co-loader"></div>
 	
