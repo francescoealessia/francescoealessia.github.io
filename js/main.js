@@ -219,20 +219,23 @@
 		parallax();
 		offcanvasMenu();
 		burgerMenu();
-		// qui prima deve esserci la gestione del burger
+		// Scroll fluido per i link del menu mobile
+$('#fh5co-offcanvas a[href^="#"]').on('click', function(e){
+    e.preventDefault();
 
-    // Scroll fluido per i link del menu mobile
-    $('#fh5co-offcanvas a[href^="#"]').on('click', function(e){
-        e.preventDefault();
-        var target = $(this.hash);
-        if (target.length) {
-            $('html, body').animate({
-                scrollTop: target.offset().top
-            }, 600, 'easeInOutExpo');
-            $('body').removeClass('offcanvas');
-            $('.js-fh5co-nav-toggle').removeClass('active');
-        }
-    });
+    var target = $(this.hash);
+    if (target.length) {
+        // Calcola altezza del menu o offset desiderato
+        var menuHeight = $('.fh5co-nav').outerHeight() || 0;
+
+        $('html, body').animate({
+            scrollTop: target.offset().top - menuHeight
+        }, 600, 'easeInOutExpo');
+
+        $('body').removeClass('offcanvas');
+        $('.js-fh5co-nav-toggle').removeClass('active');
+    }
+});
 		contentWayPoint();
 		dropdown();
 		testimonialCarousel();
