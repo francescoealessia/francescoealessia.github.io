@@ -191,16 +191,14 @@
 }
 
 
-/* Centraggio countdown */
+/* Centraggio countdown senza modificare margini verticali */
 .flipTimebox {
-    margin-left: auto !important;
-    margin-right: auto !important;
+    width: fit-content;                /* occupa solo lo spazio necessario */
+    margin: 50px auto 100px auto;      /* conserva i margini verticali e centra orizzontalmente */
     text-align: center;
 }
 
 .flipTimebox .flip-clock-wrapper {
-    margin-left: auto !important;
-    margin-right: auto !important;
-    display: inline-block;
+    margin: 0 auto !important;         /* centra la clock */
+    display: block;                     /* necessario affinché margin auto funzioni */
 }
-
