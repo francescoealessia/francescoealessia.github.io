@@ -212,14 +212,13 @@
         margin-left: 0 !important;
         padding-left: 0 !important;
     }
-}
-
-@media screen and (max-width: 767px) {
-    .flipTimebox .flip-clock-wrapper ul.flip {
-        margin: 0 2px;
+      /* Ripristina spaziatura tra numeri e due punti */
+    .flipTimebox .flip-clock-wrapper ul.flip li {
+        margin: 0 3px !important;  /* distanza tra le cifre */
     }
 
     .flipTimebox .flip-clock-dot {
-        margin-left: 2px;
+        margin-left: 3px !important; /* posizione dei due punti */
     }
 }
+
