@@ -205,12 +205,12 @@
 
 /* Sovrascrive eventuali margini nelle media query fino a tablet */
 @media screen and (max-width: 767px) {
-    .flipTimebox {
-        margin-left: auto !important;
-        margin-right: auto !important;
-    }
-    .flipTimebox .flip-clock-wrapper {
-        margin-left: auto !important;
-        margin-right: auto !important;
+    /* Rimuove spostamenti interni della flip clock su mobile e tablet */
+    .flipTimebox .flip-clock-wrapper,
+    .flipTimebox .flip-clock-wrapper ul.flip,
+    .flipTimebox .flip-clock-dot {
+        margin-left: 0 !important;
+        padding-left: 0 !important;
     }
 }
+
