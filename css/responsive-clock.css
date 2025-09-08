@@ -189,3 +189,18 @@
   font-weight: bold !important;
   font-family: Sofia Sans Condensed !important; 
 }
+
+
+/* Centraggio countdown */
+.flipTimebox {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center;
+}
+
+.flipTimebox .flip-clock-wrapper {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    display: inline-block;
+}
+
