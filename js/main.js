@@ -63,22 +63,26 @@
 	};
 
 
-	var burgerMenu = function() {
+var burgerMenu = function() {
 
-		$('body').on('click', '.js-fh5co-nav-toggle', function(event){
-			var $this = $(this);
+    $('body').on('click', '.js-fh5co-nav-toggle', function(event){
+        var $this = $(this);
 
+        if ($('body').hasClass('offcanvas')) {
+            $('body').removeClass('overflow offcanvas');
+        } else {
+            $('body').addClass('overflow offcanvas');
+        }
+        $this.toggleClass('active');
+        event.preventDefault();
+    });
 
-			if ( $('body').hasClass('overflow offcanvas') ) {
-				$('body').removeClass('overflow offcanvas');
-			} else {
-				$('body').addClass('overflow offcanvas');
-			}
-			$this.toggleClass('active');
-			event.preventDefault();
-
-		});
-	};
+    // Chiudi il menu quando si clicca un link all'interno dell'offcanvas
+    $('#fh5co-offcanvas a').on('click', function() {
+        $('body').removeClass('overflow offcanvas');
+        $('.js-fh5co-nav-toggle').removeClass('active');
+    });
+};
 
 
 
