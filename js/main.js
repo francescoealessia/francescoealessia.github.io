@@ -220,27 +220,20 @@
 		offcanvasMenu();
 		burgerMenu();
 		// Scroll fluido per i link del menu mobile
-// Scroll fluido per tutti i link a ancore
-$(document).on('click', 'a[href^="#"]', function(e) {
+$('#fh5co-offcanvas a[href^="#"]').on('click', function(e){
+    e.preventDefault();
     var target = $(this.hash);
     if (target.length) {
-        e.preventDefault();
-
-        // Calcola altezza menu attuale (desktop o mobile)
-        var offset = $('.fh5co-nav:visible').outerHeight() || 0;
-
-        // Scroll fluido
         $('html, body').animate({
-            scrollTop: target.offset().top - offset
+            scrollTop: target.offset().top
         }, 600, 'easeInOutExpo');
 
-        // Chiudi menu mobile se aperto
-        if ($('body').hasClass('offcanvas')) {
-            $('body').removeClass('offcanvas');
-            $('.js-fh5co-nav-toggle').removeClass('active');
-        }
+        // chiudi il menu dopo il click
+        $('body').removeClass('offcanvas');
+        $('.js-fh5co-nav-toggle').removeClass('active');
     }
 });
+
 
 
 		contentWayPoint();
