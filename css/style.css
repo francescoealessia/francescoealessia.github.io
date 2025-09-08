@@ -1,4 +1,4 @@
-@font-face {
+c@font-face {
   font-family: 'icomoon';
   src: url("../fonts/icomoon/icomoon.eot?srf3rx");
   src: url("../fonts/icomoon/icomoon.eot?srf3rx#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"), url("../fonts/icomoon/icomoon.woff?srf3rx") format("woff"), url("../fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
@@ -111,9 +111,11 @@ h1, h2, h3, h4, h5, h6, figure {
   color: #fff;
 }
 @media screen and (max-width: 768px) {
+  /*
   .fh5co-nav .menu-1, .fh5co-nav .menu-2 {
     display: none;
   }
+  /*
 }
 .fh5co-nav ul {
   padding: 0;
