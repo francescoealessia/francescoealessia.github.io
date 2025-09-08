@@ -229,4 +229,14 @@
 	});
 
 
+	// Scroll fluido per link del menu mobile
+$('#fh5co-offcanvas a[href^="#"]').on('click', function(e){
+    var target = $(this.getAttribute('href'));
+    if(target.length){
+        e.preventDefault(); // impedisce il comportamento predefinito
+        $('html, body').animate({
+            scrollTop: target.offset().top
+        }, 700); // durata scroll in ms
+    }
+});
 }());
