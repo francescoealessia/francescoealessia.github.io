@@ -214,3 +214,12 @@
     }
 }
 
+@media screen and (max-width: 767px) {
+    .flipTimebox .flip-clock-wrapper ul.flip {
+        margin: 0 2px;
+    }
+
+    .flipTimebox .flip-clock-dot {
+        margin-left: 2px;
+    }
+}
