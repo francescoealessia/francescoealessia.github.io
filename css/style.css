@@ -111,11 +111,9 @@ h1, h2, h3, h4, h5, h6, figure {
   color: #fff;
 }
 @media screen and (max-width: 768px) {
-  /*
   .fh5co-nav .menu-1, .fh5co-nav .menu-2 {
     display: none;
   }
-  */
 }
 .fh5co-nav ul {
   padding: 0;
