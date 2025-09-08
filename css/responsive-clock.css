@@ -202,3 +202,15 @@
     margin: 0 auto !important;         /* centra la clock */
     display: block;                     /* necessario affinché margin auto funzioni */
 }
+
+/* Sovrascrive eventuali margini nelle media query fino a tablet */
+@media screen and (max-width: 767px) {
+    .flipTimebox {
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    .flipTimebox .flip-clock-wrapper {
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
