@@ -203,22 +203,3 @@
     display: block;                     /* necessario affinché margin auto funzioni */
 }
 
-/* Sovrascrive eventuali margini nelle media query fino a tablet */
-@media screen and (max-width: 767px) {
-    /* Rimuove spostamenti interni della flip clock su mobile e tablet */
-    .flipTimebox .flip-clock-wrapper,
-    .flipTimebox .flip-clock-wrapper ul.flip,
-    .flipTimebox .flip-clock-dot {
-        margin-left: 0 !important;
-        padding-left: 0 !important;
-    }
-      /* Ripristina spaziatura tra numeri e due punti */
-    .flipTimebox .flip-clock-wrapper ul.flip li {
-        margin: 0 3px !important;  /* distanza tra le cifre */
-    }
-
-    .flipTimebox .flip-clock-dot {
-        margin-left: 3px !important; /* posizione dei due punti */
-    }
-}
-
