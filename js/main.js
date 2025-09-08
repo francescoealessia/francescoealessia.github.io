@@ -220,13 +220,14 @@
 		offcanvasMenu();
 		burgerMenu();
 		// Scroll fluido per i link del menu mobile
-$('a[href^="#"]').on('click', function(e) {
+// Scroll fluido per tutti i link a ancore
+$(document).on('click', 'a[href^="#"]', function(e) {
     var target = $(this.hash);
     if (target.length) {
         e.preventDefault();
 
-        // Altezza del menu fisso (puoi regolare se vuoi un piccolo margine)
-        var offset = $('.fh5co-nav').outerHeight() || 0;
+        // Calcola altezza menu attuale (desktop o mobile)
+        var offset = $('.fh5co-nav:visible').outerHeight() || 0;
 
         // Scroll fluido
         $('html, body').animate({
@@ -240,6 +241,7 @@ $('a[href^="#"]').on('click', function(e) {
         }
     }
 });
+
 
 		contentWayPoint();
 		dropdown();
