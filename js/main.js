@@ -215,27 +215,10 @@
 
 	
 	$(function(){
-		mobileMenuOutsideClick();
+		//mobileMenuOutsideClick();
 		parallax();
-		offcanvasMenu();
-		burgerMenu();
-		// Scroll fluido per i link del menu mobile
-$('#fh5co-offcanvas a[href^="#"]').on('click', function(e){
-    e.preventDefault();
-    var target = $(this.hash);
-    if (target.length) {
-        $('html, body').animate({
-            scrollTop: target.offset().top
-        }, 600, 'easeInOutExpo');
-
-        // chiudi il menu dopo il click
-        $('body').removeClass('offcanvas');
-        $('.js-fh5co-nav-toggle').removeClass('active');
-    }
-});
-
-
-
+		//offcanvasMenu();
+		//burgerMenu();
 		contentWayPoint();
 		dropdown();
 		testimonialCarousel();
