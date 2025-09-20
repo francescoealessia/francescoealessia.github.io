@@ -5,7 +5,7 @@ c@font-face {
   font-weight: normal;
   font-style: normal;
 }
-@font-face { font-family: 'Eyesome Script'; src: url('../fonts/Eyesome-Script.otf'); } 
+@font-face { font-family: 'Eyesome Script'; src: url('../fonts/Eyesome-Script.otf') format('opentype'); } 
 /* =======================================================
 *
 * 	Template Style 
