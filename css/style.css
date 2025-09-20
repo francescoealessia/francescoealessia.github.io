@@ -104,7 +104,7 @@ h1, h2, h3, h4, h5, h6, figure {
   margin: 0;
   padding: 0;
   line-height: 40px;
-  font-family: 'Cormorant Infant', serif;
+  font-family: 'Sofia Sans Condensed';
 }
 .fh5co-nav a {
   padding: 5px 10px;
@@ -127,7 +127,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .fh5co-nav ul li a {
   font-size: 20px;
-  font-family: 'Cormorant Infant', serif;
+  font-family: 'Sofia Sans Condensed';
   padding: 30px 10px;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.5);
@@ -428,7 +428,7 @@ h1, h2, h3, h4, h5, h6, figure {
   padding-bottom: 20px;
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-family: 'Cormorant Infant', serif;
+  font-family: 'Sofia Sans Condensed';
   font-size: 25px;
 }
 #fh5co-counter .event-wrap p, #fh5co-counter .event-wrap span,
@@ -436,7 +436,7 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-event .event-wrap span {
   display: block;
   color: rgba(0, 0, 0, 0.8);
-  font-family: 'Cormorant Infant', serif;
+  font-family: 'Sofia Sans Condensed';
   font-size: 20px;
 }
 #fh5co-counter .event-wrap i,
@@ -889,7 +889,7 @@ form label {
   color: #646464;
   border: none !important;
   font-size: 16px;
-  font-family: 'Cormorant Infant', serif;
+  font-family: 'Sofia Sans Condensed';
   text-transform: uppercase;
 }
 #fh5co-header .display-tc .btn:hover,
@@ -1388,7 +1388,7 @@ form label {
   background: black;
   font-size: 14px;
   font-weight: bold;
-  font-family: 'Cormorant Infant', serif; 
+  font-family: 'Sofia Sans Condensed'; 
   top: 0;
   right: 0;
   top: 0;
