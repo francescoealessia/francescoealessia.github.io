@@ -203,3 +203,12 @@
     display: block;                     /* necessario affinché margin auto funzioni */
 }
 
+@media screen and (max-width: 767px) {
+    /* Rimuove spostamenti interni della flip clock su mobile e tablet */
+    .flipTimebox .flip-clock-wrapper,
+    .flipTimebox .flip-clock-wrapper ul.flip,
+    .flipTimebox .flip-clock-dot {
+        margin-left: 0 !important;
+        padding-left: 0 !important;
+    }
+}
