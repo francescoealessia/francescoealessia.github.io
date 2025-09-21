@@ -47,28 +47,3 @@ $(document).ready(function() {
     }
   }
 });
-
-  // --- CENTRAGGIO E SPAZIATURA NUMERI --- //
-  // Centra il container principale
-  $('.flipTimebox').css({
-      'width': 'fit-content',
-      'margin': '50px auto 100px auto',
-      'text-align': 'center'
-  });
-
-  // Centra la clock-wrapper
-  $('.flipTimebox .flip-clock-wrapper').css({
-      'display': 'block',
-      'margin': '0 auto'
-  });
-
-  // Ripristina spaziatura tra i numeri e tra i due punti
-  $('.flipTimebox .flip-clock-wrapper ul.flip li').css({
-      'margin-left': '3px',
-      'margin-right': '3px'
-  });
-
-  $('.flipTimebox .flip-clock-dot').css({
-      'margin-left': '3px'
-  });
-});
